@@ -14,19 +14,19 @@ gulp.task('connect', function() {
 
 //Работа c css
 gulp.task('css', function () {
-  gulp.src('./app/css/*.css')
+  gulp.src('app/css/*.css')
     .pipe(connect.reload());
 });
 
 //Работа c js
 gulp.task('js', function () {
-  gulp.src('./app/*.js')
+  gulp.src('app/js/*.js')
     .pipe(connect.reload());
 });
 
 //Работа c html
 gulp.task('html', function () {
-  gulp.src('./app/js/*.html')
+  gulp.src('./app/*.html')
     .pipe(connect.reload());
 });
  
