@@ -10,7 +10,7 @@
 .dz4-form--questions {
 	width: 75%;
 	margin:  0 auto;
-	margin-top: 49px;
+	margin-top: 25px;
 }
 .dz4-form-group {
 	width: 48%;
@@ -19,12 +19,6 @@
 .dz4-form-group-100 {
 	width: 100% !important;
 	margin-top: 20px;
-}
-.dz4-form-control {
-	padding: 14px 10px;
-	border-radius: 5px;
-	border: 1px solid #48cbe8;
-	min-width: 190px;
 }
 .dz4-form-group-100 > .dz4-form-control {
 	width: 95%;
