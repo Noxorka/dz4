@@ -1,0 +1,59 @@
+.dz4-basis-contact__header {
+	background: #48cbe8;
+	padding: 50px 0;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 17px solid #67dffa;
+	color: #fff;
+	font-size: 25px;
+}
+.dz4-form--questions {
+	width: 75%;
+	margin:  0 auto;
+	margin-top: 49px;
+}
+.dz4-form-group {
+	width: 48%;
+	overflow: hidden;
+}
+.dz4-form-group-100 {
+	width: 100% !important;
+	margin-top: 20px;
+}
+.dz4-form-control {
+	padding: 14px 10px;
+	border-radius: 5px;
+	border: 1px solid #48cbe8;
+	min-width: 190px;
+}
+.dz4-form-group-100 > .dz4-form-control {
+	width: 95%;
+}
+.dz4-form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+.dz4-form-left {
+	float: left;
+	overflow: hidden;
+	margin-right: 4%;
+}
+.dz4-form-right: {
+	float: right;
+	overflow: hidden;
+	text-align: right;
+}
+.valid__img {
+	width: 214px;
+	border-radius: 5px;
+	border: 1px solid #48cbe8;
+}
+.dz4-imput-right {
+	float: right;
+	width: 190px !important;
+	margin-top: 20px;
+}
+
+.dz4-block-button {
+	margin-top: 25px;
+}
