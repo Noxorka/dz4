@@ -244,6 +244,20 @@
 										<p>Сайт напольных покрытий</p>
 									</a>
 								</li>
+								
+								<!--Добавить новый проект-->
+								<li>
+									<a href='#' onclick='Bpopup()'>
+										<div class="photo-gallery__block-img photo-gallery__block-add">
+											<div class="photo-gallery__img photo-gallery__add"><img src="img/icon/icon-add_img.png" alt=""> <p>Добавить проект</p></div>
+											<figcaption>
+												<span>Новый проект</span>
+											</figcaption>
+										</div>
+									</a>
+
+								</li>
+
 							</ul>
 						</div>
 					</div>
@@ -251,6 +265,46 @@
 
 			</div>
 		</section>
+
+		
+		<div class="b-popup" id="addProgect">
+			<div class="dz4-window-popup">
+				<div class="dz4-header-popup">
+					Добавление проекта
+					<a href='#' onclick='Bpopup()'><i class="button_close_popup"></i></a>
+				</div>
+
+			    <div class="dz4-body-popup">
+			        <form action="">
+							<div class="dz4-form-popup__form-group">
+								<label for="">Название проекта</label>
+								<input type="text" placeholder="Ваш логин" class="dz4-form-control">
+							</div>
+							<div class="dz4-form-popup__form-group">
+								<label for="">Картинка проекта</label>
+								<div class="dz4-input_input-img dz4-form-control">
+									<input type="text" class="dz4-form-control--input">
+									<button class="dz4-button-add--file"><img src="img/icon/icon-add_clowd.png" height="24" width="32" alt=""> </button>
+								</div>
+								
+							</div>
+							<div class="dz4-form-popup__form-group">
+								<label for="">URL проекта</label>
+								<input type="text" placeholder="Добавить ссылку" class="dz4-form-control" >
+							</div>
+
+							<div class="dz4-form-popup__form-group">
+								<label for="">Описание</label>
+								<textarea class="dz4-form-control" rows="4" id="exampleInputText" placeholder="Кратко в чем чуть" name="massage"></textarea>
+							</div>
+
+							<div class="dz4-block-button">
+								<input type="submit" name="button_open" value="Отправить" class="dz4-button dz4-button-blue"/>	
+							</div>	
+						</form>
+			    </div>
+			</div>
+		</div>
 		
 		<div class="dz-grad-border dz4-line__footer"></div>
 		<footer>
@@ -258,8 +312,14 @@
 				<a href="authorization.html"><div class="icon-bloak"><span class="dz4-text__hidden">войти</span></div></a> <p class="dz-footer__p-small-c">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>				
 			</div>
 		</footer>
-		
+			
+
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
 	</body>
+
+	
+
 	</html>	
+
+	

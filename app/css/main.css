@@ -16,6 +16,10 @@ header {
 footer {
 	background: #eff3f7;
 	padding: 22px 0;
+	position:  static;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 input:focus, textarea:focus {
 	outline: none;
@@ -26,6 +30,10 @@ input:focus, textarea:focus {
 	border-radius: 5px;
 	border: 1px solid #48cbe8;
 	min-width: 190px;
+}
+.dz4-form-control_error {
+	border: 1px solid #f97e76;
+	background: #fad2d1;
 }
 .dz-grad-border {
 	width: 100%;
@@ -374,6 +382,14 @@ a.dz4-a_basis:hover {
 	width: 100%;
 	height: 100%;
 }
+.photo-gallery__add {
+	border: 1px dashed #30a6bd;
+	background: #edf8fc;
+	padding: 21% 0 21% 0;
+	text-align: center;
+	font-size: 0.8em;
+	color: #3ba8c0;
+}
 .photo-gallery  h4 {
 	margin: 10px 0;
 	color: #30a6bd;
@@ -399,6 +415,9 @@ a.dz4-a_basis:hover {
   padding: 25% 0 !important;
   border: 2px solid #30a6bd;
   text-align: center;
+}
+.photo-gallery__block-add  figcaption{
+  bottom: 0;
 }
 .photo-gallery__block-img figcaption span {
 	position: relative;
@@ -433,6 +452,8 @@ a.dz4-a_basis:hover {
 /*authorization*/
 .dz-content-authorization {
 	width: 30%;
+	max-width: 400px;
+	min-width: 250px;
 	margin: 10% auto;
 	text-align: center;
 }
@@ -450,15 +471,89 @@ a.dz4-a_basis:hover {
 	padding: 26px 0;
 	border-radius:  0 0 5px 5px;
 }
-.dz4-form-authorization__form-group {
+.dz4-form-authorization__form-group, .dz4-form-popup__form-group {
 	margin-bottom: 25px;
 }
 
-.dz4-form-authorization__form-group label {
+.dz4-form-authorization__form-group label, .dz4-form-popup__form-group label {
 	display: block;
 	margin-bottom: 5px;
 }
 
 .dz4-form-authorization__form-group > .dz4-form-control {
 	width: 80% !important;
+}
+.dz4-form-popup__form-group > .dz4-form-control {
+	width: 90%;
+}
+
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+}
+.dz4-form-popup__form-group {
+	text-align: left;
+}
+.dz4-window-popup {
+	width: 60%;
+	max-width: 350px;
+	margin: 5% auto;
+}
+.dz4-header-popup {
+	overflow: hidden;
+	background: #48cbe8;
+	border-bottom: 17px solid #67dffa;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 14px 10px;
+	border-radius: 5px 5px 0 0;
+}
+.button_close_popup {
+	background: url(../img/icon/icon-close.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	background-size: cover;
+	float: right;
+}
+.dz4-body-popup {
+	text-align: center;
+	background: #eff3f7;
+	padding: 14px 20px;
+	border-radius: 0 0 5px 5px;
+}
+
+.dz4-input_input-img {
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	width: 95% !important;
+}
+.dz4-form-control--input {
+	border: 0;
+	height: 100%;
+	width: 90%;
+	padding: 14px 10px;
+	border-radius: 5px 0 0 5px;
+	margin-right: 0;
+}
+.dz4-form-control--input:focus {
+	outline: none;
+	border: none;
+}
+.dz4-button-add--file {
+	background: #48cbe8;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 55px;
 }
