@@ -1,6 +1,32 @@
+ /*Fonts*/
+ @font-face {
+    font-family: FontBasisB; 
+    src: url('../fonts/firamono-bold-webfont.eot');
+    src: url('../fonts/firamono-bold-webfont.svg') format('svg');
+    src: url('../fonts/firamono-bold-webfont.ttf') format('truetype');
+    src: url('../fonts/firamono-bold-webfont.woff') format('woff');
+    src: url('../fonts/firamono-bold-webfont.woff2') format('woff2');
+}
+ @font-face {
+    font-family: FontBasis; 
+    src: url('../fonts/firamono-regular-webfont.eot'),
+    	 url('../fonts/firamono-regular-webfont.svg') format('svg'),
+    	 url('../fonts/firamono-regular-webfont.ttf') format('truetype'),
+    	 url('../fonts/firamono-regular-webfont.woff') format('woff'),
+    	 url('../fonts/firamono-regular-webfont.woff2') format('woff2');
+}
+ @font-face {
+    font-family: ontBasisB; 
+    src: url('../fonts/firasans-bolditalic-webfont.eot');
+    src: url('../fonts/firasans-bolditalic-webfont.svg') format('svg');
+    src: url('../fonts/firasans-bolditalic-webfont.ttf') format('truetype');
+    src: url('../fonts/firasans-bolditalic-webfont.woff') format('woff');
+    src: url('../fonts/firasans-bolditalic-webfont.woff2') format('woff2');
+}
+
 body {
 	margin: 0;
-	font-family: Arial;
+	font-family: FontBasis, Arial;
 	background: url("../img/bg.png") repeat;
 	color: #4a545d;
 }
@@ -27,6 +53,7 @@ input:focus, textarea:focus {
 }
 .dz4-form-control {
 	padding: 14px 10px;
+	padding-right: 0;
 	border-radius: 5px;
 	border: 1px solid #48cbe8;
 	min-width: 190px;
