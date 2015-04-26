@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html lang="en">
+	<html lang="ru">
 	<head>
 		<!--faveicon-->
 		<link rel="apple-touch-icon" sizes="57x57" href="img/faveicon/apple-icon-57x57.png">
@@ -29,41 +29,59 @@
 		
 	</head>
 	<body>
-		<header>
-			<div class="dz4-container__header">
-				<div class="dz4-logo">
-					<a href="" alt=""><img src="img/logo.png" alt="Web разработка"/></a>
+	<!--[if lt IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+		Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+	<![endif]-->
+
+	<header class="header">
+		<div class="dz4-container__header">
+			<div class="dz4-logo">
+				<a href="" alt="">
+					<img src="img/logo.png" alt="Web разработка"/>
 					<p class="dz4-text__hidden">web разработчик</p>
-				</div> 
-				
-				<ul class="dz4-soc-seti">
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__vk"><p class="dz4-text__hidden">Vk</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__tv"><p class="dz4-text__hidden">Twetter</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__fb"><p class="dz4-text__hidden">Facebook</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__git"><p class="dz4-text__hidden">GitHub</p></div></a></li>
-				</ul>	
+				</a>
 
 			</div>
 
-		</header>
-		<div class="dz-grad-border"></div>
+			<ul class="dz4-soc-seti__item">
+				<li class="dz4-soc-seti__item_li">
+					<a href="" target="_blank" class="dz4-soc-seti vk">Vk</a>
+				</li>
+				<li class="dz4-soc-seti__item_li">
+					<a href="" target="_blank" class="dz4-soc-seti tv">Twetter</a>
+				</li>
+				<li class="dz4-soc-seti__item_li">
+					<a href="" target="_blank" class="dz4-soc-seti fb">Facebook</a>
+				</li>
+				<li class="dz4-soc-seti__item_li">
+					<a href="" target="_blank" class="dz4-soc-seti git">GitHub</a>
+				</li>
+			</ul>
 
+		</div>
+
+	</header>
+	<div class="dz-grad-border"></div>
+
+
+	<div class="dz4-body-content wrapper clearfix">
 		<section>
 			<div class="dz4-container__content">
 				<div class="div_left__menu">
 					<nav>
 						<ul class="dz4-nav">
-							<li><a href="index.html" class="dz4-a_basis">Обо мне</a></li>
-							<li><a href="work.html" class="dz4-a_basis">Мои работы</a></li>
-							<li class="dz4-activ"><a href="contact.html" class="dz4-a_basis">Связаться со мной</a></li>
+							<li class="dz4-nav__li"><a href="index.html" class="dz4-a_basis">Обо мне</a></li>
+							<li class="dz4-nav__li"><a href="work.html" class="dz4-a_basis">Мои работы</a></li>
+							<li class="dz4-nav__li dz4-activ"><a href="contact.html" class="dz4-a_basis">Связаться со мной</a></li>
 						</ul>
 					</nav>	
 
 					<ul class="div_left__menu-contact">
 						<li class="dz4-contact title-contact">Контакты</li>
-						<li class="dz4-contact icon-email"><a href="mailto:asyagai@gmail.com">asyagai@gmail.com</a></li>
-						<li class="dz4-contact icon-phone"><a href="tel:+79312600272?call">+79312600272</a></li>
-						<li class="dz4-contact icon-skype"><a href="skype:Nohorka?call">nohorka</a></li>
+						<li class="dz4-contact icon-email"><a class="dz4-contact_a" href="mailto:asyagai@gmail.com">asyagai@gmail.com</a></li>
+						<li class="dz4-contact icon-phone"><a class="dz4-contact_a" href="tel:+79312600272?call">+79312600272</a></li>
+						<li class="dz4-contact icon-skype"><a class="dz4-contact_a" href="skype:Nohorka?call">nohorka</a></li>
 					</ul>
 				</div>
 				
@@ -73,24 +91,27 @@
 							У вас интересный проект? Напишите мне
 						</div>
 						<div class="dz4-basis-conteiner__infa">
-							<form action="" class="dz4-form--questions" id="form-question">
-								<div class="dz4-form-group dz4-form-left">
-								    <label for="exampleInputName">Имя</label>
-								    <input type="text" name="fio" class="dz4-form-control" id="exampleInputName" placeholder="Как к вам обращаться">
-							  	</div>
+							<form action="" class="dz4-form--questions clearfix" id="form-question">
 
-							  	<div class="dz4-form-group dz4-form-right">
-								    <label for="exampleInputEmail">Email</label>
-								    <input type="email" class="dz4-form-control" id="exampleInputEmail" name="email" placeholder="Куда вам писать">
-							  	</div>
+								<div class="clearfix">
+									<div class="dz4-form-group dz4-form-left">
+										<label>Имя</label>
+										<input type="text" name="fio" class="dz4-form-control" id="exampleInputName" placeholder="Как к вам обращаться">
+									</div>
+
+									<div class="dz4-form-group dz4-form-right">
+										<label>Email</label>
+										<input type="email" class="dz4-form-control" id="exampleInputEmail" name="email" placeholder="Куда вам писать">
+									</div>
+								</div>
 
 							  	<div class="dz4-form-group dz4-form-group-100">
-								    <label for="exampleInputeText">Сообщение</label>
+								    <label>Сообщение</label>
 								    <textarea class="dz4-form-control" rows="8" id="exampleInputText" placeholder="Кратко в чем чуть" name="massage"></textarea>
 							  	</div>
 
 							  	<div class="dz4-form-group dz4-form-group-100">
-								    <label for="exampleInputeValidayion">Введите код, указанный на картинке</label>
+								    <label>Введите код, указанный на картинке</label>
 								    <img src="img/img_v.jpg" class="valid__img" alt="">
 								    <input type="text" class="dz4-form-control dz4-imput-right" id="exampleInputValidayion" placeholder="Введите код" name="validation">
 								</div>
@@ -112,9 +133,10 @@
 
 			</div>
 		</section>
+		</div>
 		
-		<div class="dz-grad-border dz4-line__footer"></div>
-		<footer>
+
+		<footer class="clearfix page-footer footer">
 			<div class="dz4-container__content footer">				
 				<a href="authorization.html"><div class="icon-bloak"><span class="dz4-text__hidden">войти</span></div></a> <p class="dz-footer__p-small-c">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>				
 			</div>

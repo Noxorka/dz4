@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html lang="en">
+	<html lang="ru">
 	<head>
 		<!--faveicon-->
 		<link rel="apple-touch-icon" sizes="57x57" href="img/faveicon/apple-icon-57x57.png">
@@ -17,7 +17,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="img/faveicon/favicon-16x16.png">
 
 		<meta charset="UTF-8">
-		<title>Портфолио главная страница</title>
+		<title>Главная страница</title>
 
 		<!--js-->
 		<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
@@ -28,18 +28,35 @@
 		
 	</head>
 	<body>
-		<header>
+
+	<!--[if lt IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+		Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+	<![endif]-->
+
+		<header class="header">
 			<div class="dz4-container__header">
 				<div class="dz4-logo">
-					<a href="" alt=""><img src="img/logo.png" alt="Web разработка"/></a>
-					<p class="dz4-text__hidden">web разработчик</p>
+					<a href="" alt="">
+						<img src="img/logo.png" alt="Web разработка"/>
+						<p class="dz4-text__hidden">web разработчик</p>
+					</a>
+
 				</div> 
 				
-				<ul class="dz4-soc-seti">
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__vk"><p class="dz4-text__hidden">Vk</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__tv"><p class="dz4-text__hidden">Twetter</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__fb"><p class="dz4-text__hidden">Facebook</p></div></a></li>
-					<li><a href="" target="_blank"><div class="dz4-soc-seti__git"><p class="dz4-text__hidden">GitHub</p></div></a></li>
+				<ul class="dz4-soc-seti__item">
+					<li class="dz4-soc-seti__item_li">
+						<a href="" target="_blank" class="dz4-soc-seti vk">Vk</a>
+					</li>
+					<li class="dz4-soc-seti__item_li">
+						<a href="" target="_blank" class="dz4-soc-seti tv">Twetter</a>
+					</li>
+					<li class="dz4-soc-seti__item_li">
+						<a href="" target="_blank" class="dz4-soc-seti fb">Facebook</a>
+					</li>
+					<li class="dz4-soc-seti__item_li">
+						<a href="" target="_blank" class="dz4-soc-seti git">GitHub</a>
+					</li>
 				</ul>	
 
 			</div>
@@ -47,122 +64,140 @@
 		</header>
 		<div class="dz-grad-border"></div>
 
-		<section>
-			<div class="dz4-container__content">
-				<div class="div_left__menu">
-					<nav>
-						<ul class="dz4-nav">
-							<li class="dz4-activ"><a href="index.html" class="dz4-a_basis">Обо мне</a></li>
-							<li><a href="work.html" class="dz4-a_basis">Мои работы</a></li>
-							<li><a href="contact.html" class="dz4-a_basis">Связаться со мной</a></li>
+		<div class="dz4-body-content wrapper clearfix">
+			<section>
+				<div class="dz4-container__content">
+					<div class="div_left__menu">
+						<nav>
+							<ul class="dz4-nav">
+								<li class="dz4-nav__li dz4-activ"><a href="index.html" class="dz4-a_basis ">Обо мне</a></li>
+								<li class="dz4-nav__li"><a href="work.html" class="dz4-a_basis">Мои работы</a></li>
+								<li class="dz4-nav__li"><a href="contact.html" class="dz4-a_basis">Связаться со мной</a></li>
+							</ul>
+						</nav>
+
+						<ul class="div_left__menu-contact">
+							<li class="dz4-contact title-contact">Контакты</li>
+							<li class="dz4-contact icon-email"><a class="dz4-contact_a" href="mailto:asyagai@gmail.com">asyagai@gmail.com</a></li>
+							<li class="dz4-contact icon-phone"><a class="dz4-contact_a" href="tel:+79312600272?call">+79312600272</a></li>
+							<li class="dz4-contact icon-skype"><a class="dz4-contact_a" href="skype:Nohorka?call">nohorka</a></li>
 						</ul>
-					</nav>	
+					</div>
 
-					<ul class="div_left__menu-contact">
-						<li class="dz4-contact title-contact">Контакты</li>
-						<li class="dz4-contact icon-email"><a href="mailto:asyagai@gmail.com">asyagai@gmail.com</a></li>
-						<li class="dz4-contact icon-phone"><a href="tel:+79312600272?call">+79312600272</a></li>
-						<li class="dz4-contact icon-skype"><a href="skype:Nohorka?call">nohorka</a></li>
-					</ul>
+					<div class="dz4-basis-div">
+						<div class="dz4-basis-conteiner">
+							<div class="dz4-basis-conteiner__header">
+								Основная информация
+							</div>
+							<div class="dz4-basis-conteiner__infa">
+								<img src="img/photo.jpg" alt="Фото" class="dz4_photo"/>
+
+								<ul class="dz4-about">
+									<li class="dz4-about_key-navok">
+										<div class="dz4-about--title">Меня зовут:</div>
+										<div class="dz4-about--body">Гайнутдинова Ася Григорьевна</div>
+									</li>
+									<li class="dz4-about_key-navok">
+										<div class="dz4-about--title">Мой возраст: </div>
+										<div class="dz4-about--body">29 лет</div>
+									</li>
+									<li class="dz4-about_key-navok">
+										<div class="dz4-about--title">Мой город:</div>
+										<div class="dz4-about--body">Санкт-Петербург, Россия</div>
+									</li>
+									<li class="dz4-about_key-navok">
+										<div class="dz4-about--title">Моя специализация: </div>
+										<div class="dz4-about--body">Web-дизайнер</div>
+									</li>
+									<li class="dz4-about_key-navok">
+										<div class="dz4-about--title">Ключевые навыки:</div>
+										<div class="dz4-about--body">
+											<ul class="dz4-about__navok">
+												<li class="lable_navok"><span class="dz4-navok__lable">html</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">css</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">Javascript</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">gulp</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">git</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">Photoshop</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">Illustrator</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">Indesign</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">3DMax</span></li>
+												<li class="lable_navok"><span class="dz4-navok__lable">Autocad</span></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+
+
+						<!--Опыт работы-->
+						<div class="dz4-basis-conteiner">
+							<div class="dz4-basis-conteiner__header">
+								Опыт работы
+							</div>
+							<div class="dz4-basis-conteiner__infa">
+								<ul class="dz4-work-conteiner">
+									<li class="dz4-work__icon work">
+										<div class="dz4-work__bold-text">ООО "Книга по требованию" - web-дизайнер </div>
+										август 2012 - сейчас
+									</li>
+									<li class="dz4-work__icon work">
+										<div class="dz4-work__bold-text">ООО "Гамма медиа" - дизайнер</div>
+										апрель 2011 - март 2012
+									</li>
+									<li class="dz4-work__icon work">
+										<div class="dz4-work__bold-text">ООО "Стек" - дизайнер</div>
+										апрель 2011 - март 2012
+									</li>
+									<li class="dz4-work__icon work">
+										<div class="dz4-work__bold-text">ЗАО "Таурус Феникс" - инжинер технолог</div>
+										сентябрь 2009 - апрель 2011
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!--/Опыт работы -->
+
+						<!--Образование-->
+
+						<div class="dz4-basis-conteiner">
+							<div class="dz4-basis-conteiner__header">
+								Образование
+							</div>
+							<div class="dz4-basis-conteiner__infa">
+								<ul class="dz4-work-conteiner">
+									<li class="dz4-work__icon teach">
+										<div class="dz4-work__bold-text">СПбГПУ - инжинер по динамике и прочности машин</div>
+										сентябрь 2003 - июль 2009
+									</li>
+									<li class="dz4-work__icon teach">
+										<div class="dz4-work__bold-text">СПбГПУ - ФПП - Графический дизайнер</div>
+										сентябрь 2009 - январь 2012
+									</li>
+									<li class="dz4-work__icon cours">
+										<div class="dz4-work__bold-text">ConvertMonster - продвижение сайтов, реклама в интернете</div>
+										декабрь 2014 - январь 2015
+									</li>
+									<li class="dz4-work__icon cours">
+										<div class="dz4-work__bold-text">LoftSchool - frontend разработчик</div>
+										март 2015 - по настоящее время
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
 				</div>
-				
-				<div class="dz4-basis-div">
-					<div class="dz4-basis-conteiner">
-						<div class="dz4-basis-conteiner__header">
-							Основная информация
-							<div class="dz4-basis-conteiner__header--line"></div>
-						</div>
-						<div class="dz4-basis-conteiner__infa">							
-							<img src="img/photo.jpg" alt="Фото" class="dz4_photo"/>							
-							
-							<ul class="dz4-about">
-								<li>Меня зовут: <span>Гайнутдинова Ася</span></li>
-								<li>Мой возраст: <span>29 лет</span></li>
-								<li>Мой город: <span>Санкт-Петербург, Россия</span></li>
-								<li>Моя специализация: <span>Web-дизайнер</span></li>
-								<li class="dz4-about_key-navok">Ключевые навыки: 
-									<ul class="dz4-about__navok">
-										<li><div class="lable_navok">html</div></li>
-										<li><div class="lable_navok">css</div></li>
-										<li><div class="lable_navok">javascript</div></li>
-										<li><div class="lable_navok">gulp</div></li>
-										<li><div class="lable_navok">git</div></li>
-									</ul>
-								</li>
-							</ul>
-								
-						</div>
-					</div>
+			</section>
+		</div>
 
-						
-
-					<!--Опыт работы-->
-					<div class="dz4-basis-conteiner">
-						<div class="dz4-basis-conteiner__header">
-							Опыт работы
-							<div class="dz4-basis-conteiner__header--line"></div>
-						</div>
-						<div class="dz4-basis-conteiner__infa">							
-							<ul class="dz4-work-conteiner">
-								<li class="dz4-work__icon work">
-									<div class="dz4-work__bold-text">ООО "Книга по требованию" - web-дизайнер</div>
-									август 2012 - сейчас
-								</li>
-								<li class="dz4-work__icon work">
-									<div class="dz4-work__bold-text">ООО "Гамма медиа" - дизайнер</div>
-									апрель 2011 - март 2012
-								</li>
-								<li class="dz4-work__icon work">
-									<div class="dz4-work__bold-text">ООО "Стек" - дизайнер</div>
-									апрель 2011 - март 2012
-								</li>
-								<li class="dz4-work__icon work">
-									<div class="dz4-work__bold-text">ЗАО "Таурус Феникс" - инжинер технолог</div>
-									сентябрь 2009 - апрель 2011
-								</li>
-							</ul>
-						</div>
-					</div>						
-
-					<!--/Опыт работы -->
-
-					<!--Образование-->
-
-					<div class="dz4-basis-conteiner">
-						<div class="dz4-basis-conteiner__header">
-							Образование
-							<div class="dz4-basis-conteiner__header--line"></div>
-						</div>
-						<div class="dz4-basis-conteiner__infa">							
-							<ul class="dz4-work-conteiner">
-								<li class="dz4-work__icon teach">
-									<div class="dz4-work__bold-text">СПбГПУ - инжинер по динамике и прочности машин</div>
-									сентябрь 2003 - июль 2009
-								</li>
-								<li class="dz4-work__icon teach">
-									<div class="dz4-work__bold-text">СПбГПУ - ФПП - Графический дизайнер</div>
-									сентябрь 2009 - январь 2012
-								</li>
-								<li class="dz4-work__icon cours">
-									<div class="dz4-work__bold-text">ConvertMonster - продвижение сайтов, реклама в интернете</div>
-									декабрь 2014 - январь 2015
-								</li>
-								<li class="dz4-work__icon cours">
-									<div class="dz4-work__bold-text">LoftSchool - frontend разработчик</div>
-									март 2015 - по настоящее время
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>			
-
-			</div>
-		</section>
-		
-		<div class="dz-grad-border dz4-line__footer"></div>
-		<footer>
+		<footer class="clearfix page-footer footer">
 			<div class="dz4-container__content footer">				
-				<a href="authorization.html"><div class="icon-bloak"><span class="dz4-text__hidden">войти</span></div></a> <p class="dz-footer__p-small-c">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>				
+				<a href="authorization.html" class="icon-bloak">войти</a> <p class="dz-footer__p-small-c">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 			</div>
 		</footer>
 		

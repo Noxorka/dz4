@@ -14,14 +14,18 @@
 }
 .dz4-form-group {
 	width: 48%;
-	overflow: hidden;
+	text-align: left;
+	position: relative;
 }
 .dz4-form-group-100 {
 	width: 100% !important;
-	margin-top: 20px;
+	margin-top: 20px !important;
+	position: relative;
 }
 .dz4-form-group-100 > .dz4-form-control {
 	width: 95%;
+	text-align: left;
+	position: relative;
 }
 .dz4-form-group label {
 	display: block;
@@ -32,10 +36,9 @@
 	overflow: hidden;
 	margin-right: 4%;
 }
-.dz4-form-right: {
+.dz4-form-right {
 	float: right;
-	overflow: hidden;
-	text-align: right;
+	text-align: left;
 }
 .valid__img {
 	width: 214px;
