@@ -331,24 +331,7 @@ input:focus, textarea:focus {
 .dz4-work__bold-text {
 	font-weight: bold;
 }
-.footer {
-	position: relative;
-	background: #eff3f7;
-	padding: 22px 0;
-}
- .footer:before {
-	 width: 100%;
-	 height: 3px;
-	 position: absolute;
-	 top:0;
-	 background: rgba(231,239,243,1);
-	 background: -moz-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
-	 background: -webkit-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
-	 background: -o-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
-	 background: -ms-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
-	 background: linear-gradient(to right, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1 );
- }
+
  .header:after {
 	 width: 100%;
 	 height: 3px;
@@ -620,6 +603,27 @@ input:focus, textarea:focus {
 
 
 /*footer*/
+ .footer {
+	 position: relative;
+	 background: #eff3f7;
+	 padding: 22px 0;
+ }
+ .footer:before {
+	 width: 100%;
+	 height: 3px;
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 content: "";
+	 background: rgba(231,239,243,1);
+	 background: -moz-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
+	 background: -webkit-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
+	 background: -o-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
+	 background: -ms-linear-gradient(left, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
+	 background: linear-gradient(to right, rgba(231,239,243,1) 0%, rgba(34,106,126,1) 51%, rgba(231,239,243,1) 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1 );
+ }
+
  .wrapper {
 	 position: relative;
 	 min-height: 100%;
