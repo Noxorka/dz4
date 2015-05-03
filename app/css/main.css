@@ -600,7 +600,41 @@ input:focus, textarea:focus {
 	bottom: 0;
 	width: 55px;
 }
+/*form*/
+.dz6-form--info {
+	display: none;
+	padding: 2em;
+	border-radius: 5px;
+	margin-bottom: 1.5em;
+}
+.dz6-form--info__success {
+	background: #CAED9E;
+	border: 1px solid  #009900;
+	color: #5E740B;
+}
 
+ .dz6-form--info__error {
+	 background: #fad2d1;
+	 border: 1px solid #912323;
+	 color: #710909;
+ }
+ /*Оформление input textarea*/
+ .dz4-form__input--error {
+	 background: #fad2d1;
+	 border: 1px solid #912323;
+ }
+ .dz4-form__input--success {
+	 background: #CAED9E;
+	 border: 1px solid  #009900;
+	 color: #5E740B;
+ }
+ input, textarea {
+	 color: #48cbe8;
+ }
+ ::-webkit-input-placeholder {color:#E6F8FB;}
+ ::-moz-placeholder          {color:#E6F8FB;}/* Firefox 19+ */
+ :-moz-placeholder           {color:#E6F8FB;}/* Firefox 18- */
+ :-ms-input-placeholder      {color:#E6F8FB;}
 
 /*footer*/
  .footer {
