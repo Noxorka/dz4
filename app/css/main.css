@@ -375,12 +375,15 @@ input:focus, textarea:focus {
 }
 .photo-galler_basis_list-element {
 	list-style: none;
-	float: left;
 	text-align: center;
 	padding: 0;
+	display: -moz-inline-stack;
 	display: inline-table;
 	margin: 2% 2%;
-	width: 29.333%;
+	min-height: 250px;
+	width: 28.333%;
+	zoom: 1;
+	*display: inline;
 }
  .photo-galler_basis_list-element:nth-child(3n+1) {
 	clear: left;
