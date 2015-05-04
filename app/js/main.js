@@ -6,16 +6,15 @@ function Bpopup() {
     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
+
 var model = (function() {
-
-
     /*Валидация*/
     var init = function() {
             console.log('INIt form');
             _setUpListners();
         },
         _setUpListners = function (){
-            $('form').on('submit', _submitForm);
+            $('s').on('submit', _submitForm);
         },
         _submitForm = function(ev) {
             console.log('INIt formfd');

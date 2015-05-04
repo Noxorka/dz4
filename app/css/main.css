@@ -405,6 +405,7 @@ input:focus, textarea:focus {
 	text-align: center;
 	font-size: 0.8em;
 	color: #3ba8c0;
+	float: left;
 }
 .photo-gallery-title {
 	margin: 10px 0;
@@ -412,24 +413,28 @@ input:focus, textarea:focus {
 	font-size: 12px;
 	font-style: italic;
 }
+.photo-gallery__block-img {
+	 position: relative;
+ }
+
 .photo-gallery-about {
 	margin: 0;
 }
-.photo-gallery__block-img {
-	position: relative;
-}
+
 .dz4-photo-gallery_block_hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 4px;
-  width: 100%;
-  border-radius: 5px;
-  background: rgba(59,168,192,.8);
-  opacity: 0;
-  padding: 25% 0 !important;
-  border: 2px solid #30a6bd;
-  text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 4px;
+	width: 100%;
+	border-radius: 5px;
+	background: #30a6bd;
+	opacity: 0.7;
+	filter: alpha(Opacity=70);
+	padding: 25% 0 !important;
+	border: 2px solid #30a6bd;
+	text-align: center;
+	display: none;
 }
 .dz4-photo-gallery_block_hover-text{
 	position: relative;
@@ -440,7 +445,7 @@ input:focus, textarea:focus {
 	border-radius: 5px;
 }
 .photo-gallery__block-img:hover .dz4-photo-gallery_block_hover {
-  opacity: 1;
+	display: block;
 }
 
 /*Форма загрузки файла*/
@@ -537,7 +542,9 @@ input:focus, textarea:focus {
 .b-popup{
     width:100%;
     min-height:100%;
-    background-color: rgba(0,0,0,0.5);
+    background: #000000;
+	filter: alpha(Opacity=70);
+	background: rgba(0,0,0,0.6);
     overflow: hidden;
     position: absolute;
     top: 0px;
@@ -547,9 +554,11 @@ input:focus, textarea:focus {
 	text-align: left;
 }
 .dz4-window-popup {
-	width: 60%;
-	max-width: 350px;
+	width: 20%;
 	margin: 5% auto;
+	opacity: 1!important;
+	position: absolute;
+	left: 40%;
 }
 .dz4-header-popup {
 	overflow: hidden;
@@ -639,7 +648,10 @@ input:focus, textarea:focus {
  :-moz-placeholder           {color:#E6F8FB;}/* Firefox 18- */
  :-ms-input-placeholder      {color:#E6F8FB;}
 
-/*footer*/
+ /* Стиль для браузеров не поддерживающих placeholder или псевдо-елемента input-placeholder*/
+ input.input-placeholder, textarea.input-placeholder {color:#E6F8FB;}
+
+ /*footer*/
  .footer {
 	 position: relative;
 	 background: #eff3f7;
