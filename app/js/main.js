@@ -14,7 +14,7 @@ var model = (function() {
             _setUpListners();
         },
         _setUpListners = function (){
-            $('s').on('submit', _submitForm);
+            $('form').on('submit', _submitForm);
         },
         _submitForm = function(ev) {
             console.log('INIt formfd');

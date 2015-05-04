@@ -22,23 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="work.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/work.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6470587">
-              <caret line="293" column="37" selection-start-line="293" selection-start-column="37" selection-end-line="293" selection-end-column="37" />
-              <folding>
-                <marker date="1430661116334" expanded="true" signature="1615:1719" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
-              <caret line="97" column="85" selection-start-line="97" selection-start-column="85" selection-end-line="97" selection-end-column="98" />
+            <state vertical-scroll-proportion="-40.807693">
+              <caret line="159" column="81" selection-start-line="159" selection-start-column="81" selection-end-line="159" selection-end-column="81" />
               <folding>
                 <marker date="1430659659452" expanded="true" signature="1732:1836" placeholder="..." />
               </folding>
@@ -46,23 +34,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorization.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/authorization.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.846153">
-              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="70" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8739612">
-              <caret line="560" column="12" selection-start-line="560" selection-start-column="12" selection-end-line="560" selection-end-column="12" />
+            <state vertical-scroll-proportion="-6.084746">
+              <caret line="467" column="19" selection-start-line="467" selection-start-column="19" selection-end-line="467" selection-end-column="19" />
               <folding>
-                <element signature="e#3903#3949#0" expanded="false" />
+                <element signature="e#4028#4074#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,7 +50,17 @@
         <entry file="file://$PROJECT_DIR$/app/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputFile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/inputFile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21766965">
+              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -82,8 +70,20 @@
         <entry file="file://$PROJECT_DIR$/app/js/validate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="26" />
+              <caret line="10" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="work.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/work.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9803921">
+              <caret line="310" column="36" selection-start-line="310" selection-start-column="36" selection-end-line="310" selection-end-column="55" />
+              <folding>
+                <marker date="1430774228389" expanded="true" signature="1615:1719" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,16 +103,17 @@
         <option value="$PROJECT_DIR$/app/css/contact.css" />
         <option value="$PROJECT_DIR$/app/php/ajax.php" />
         <option value="$PROJECT_DIR$/app/bower/qtip2/basic/jquery.qtip.css" />
-        <option value="$PROJECT_DIR$/app/js/validate.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/bower/qtip2/jquery.qtip.css" />
         <option value="$PROJECT_DIR$/app/authorization.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/ie8.js" />
         <option value="$PROJECT_DIR$/app/contact.html" />
-        <option value="$PROJECT_DIR$/app/work.html" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/work.html" />
+        <option value="$PROJECT_DIR$/app/js/validate.js" />
         <option value="$PROJECT_DIR$/app/css/main.css" />
+        <option value="$PROJECT_DIR$/app/js/inputFile.js" />
       </list>
     </option>
   </component>
@@ -367,7 +368,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1430661116334" expanded="true" signature="1615:1719" placeholder="..." />
+            <marker date="1430774228389" expanded="true" signature="1615:1719" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -395,7 +396,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="332" column="0" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
           <folding>
-            <marker date="1430661116334" expanded="true" signature="1615:1719" placeholder="..." />
+            <marker date="1430774228389" expanded="true" signature="1615:1719" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -423,7 +424,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="330" column="8" selection-start-line="330" selection-start-column="8" selection-end-line="334" selection-end-column="17" />
           <folding>
-            <marker date="1430661116334" expanded="true" signature="1615:1719" placeholder="..." />
+            <marker date="1430774228389" expanded="true" signature="1615:1719" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -440,7 +441,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3903#3949#0" expanded="false" />
+            <element signature="e#4028#4074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -537,49 +538,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+    <entry file="file://$PROJECT_DIR$/app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-6.084746">
+          <caret line="467" column="19" selection-start-line="467" selection-start-column="19" selection-end-line="467" selection-end-column="19" />
+          <folding>
+            <element signature="e#4028#4074#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="97" column="85" selection-start-line="97" selection-start-column="85" selection-end-line="97" selection-end-column="98" />
+        <state vertical-scroll-proportion="-40.807693">
+          <caret line="159" column="81" selection-start-line="159" selection-start-column="81" selection-end-line="159" selection-end-column="81" />
           <folding>
             <marker date="1430659659452" expanded="true" signature="1732:1836" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="26" />
+          <caret line="10" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6470587">
-          <caret line="293" column="37" selection-start-line="293" selection-start-column="37" selection-end-line="293" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.9803921">
+          <caret line="310" column="36" selection-start-line="310" selection-start-column="36" selection-end-line="310" selection-end-column="55" />
           <folding>
-            <marker date="1430661116334" expanded="true" signature="1615:1719" placeholder="..." />
+            <marker date="1430774228389" expanded="true" signature="1615:1719" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/js/inputFile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8739612">
-          <caret line="560" column="12" selection-start-line="560" selection-start-column="12" selection-end-line="560" selection-end-column="12" />
-          <folding>
-            <element signature="e#3903#3949#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.21766965">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
