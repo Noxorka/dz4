@@ -16,7 +16,7 @@ var validation = (function () {
                     val = element.val(),
                     pos = element.attr('qtip-position');
 
-                if(val.length === 0 ) {
+                if(val.length === 0) {
                     element.addClass('dz4-form__input--error');
                     _createQtip(element,pos);
                     valid = false;
@@ -26,28 +26,18 @@ var validation = (function () {
         },
         _setUpListners = function(){
             $('form').on('keydown','.dz4-form__input--error', _removeError);
-            $('form').on('change', '#file', _removeErrorUpload);
             $('form').on('reset', _clearForm);
         },
-
         _removeError = function() {
             console.log('Удаление красной обводки');
             $(this).removeClass('dz4-form__input--error');
         },
-
-        _removeErrorUpload = function() {
-            var filename = $('#file-name');
-            filename.removeClass('dz4-form__input--error');
-            filename.trigger('hideTooltip');
-        },
-
         _clearForm = function(form) {
             var form = $(this);
             form.find('input, textarea').trigger('hideTooltip');
             form.find('.dz4-form__input--error').removeClass('dz4-form__input--error');
             form.find('.dz6-form--info__success, .dz6-form--info__error').text('').hide();
         },
-
         _createQtip = function(element, position) {
             console.log('tooltip');
 
@@ -93,52 +83,4 @@ var validation = (function () {
         validateForm: validateForm
     };
 })();
-
-var UploadFix = (function() {
-    // Setting up listening if user has chose a file
-    var _setUpListeners = function() {
-            $('#form-file').on('change', _showPlaceholder);
-        },
-
-    // adding a placeholder text
-        _showPlaceholder = function(ev) {
-            ev.preventDefault();
-
-            var realVal = $(this).val(),
-                lastIndex = realVal.lastIndexOf('\\') + 1;
-
-            if (lastIndex !== -1) {
-                realVal = realVal.substr(lastIndex);
-                $('#file-name').val(realVal);
-            }
-        }
-
-    return {
-        init: _setUpListeners
-    }
-
-})();
-
-var FixPlaceholders = (function() {
-    var _fixPlaceholders = function() {
-        $('input, textarea').placeholder();
-    }
-
-    return {
-        init: function() {
-            _fixPlaceholders();
-        }
-    }
-})();
-
-$(document).ready(function() {
-
-    if ($.find('#file-form-label').length > 0) {
-        UploadFix.init();
-    }
-
-    if ($.find('form').length > 0) {
-        validation.init();
-        FixPlaceholders.init();
-    }
-});
+validation.init();
