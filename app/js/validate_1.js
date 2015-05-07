@@ -1,10 +1,16 @@
-"use strict";
+function Bpopup() {
+    var el;
+    el = document.getElementById("addProgect");
+    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
 
-var validation = (function () {
+var validation = (function() {
+
     var init = function() {
             console.log('Инициализация модуля Validation');
             _setUpListners();
-            },
+        },
+
         validateForm = function(form) {
             console.log('Проверка формы');
 
@@ -35,17 +41,18 @@ var validation = (function () {
             $(this).removeClass('dz4-form__input--error');
         },
 
-        _removeErrorUpload = function() {
-            var filename = $('#file-name');
-            filename.removeClass('dz4-form__input--error');
-            filename.trigger('hideTooltip');
-        },
-
         _clearForm = function(form) {
             var form = $(this);
             form.find('input, textarea').trigger('hideTooltip');
             form.find('.dz4-form__input--error').removeClass('dz4-form__input--error');
             form.find('.dz6-form--info__success, .dz6-form--info__error').text('').hide();
+        },
+
+    // remove highlight and qtip from upload field
+        _removeErrorUpload = function() {
+            var filename = $('#file-name');
+            filename.removeClass('dz4-form__input--error');
+            filename.trigger('hideTooltip');
         },
 
         _createQtip = function(element, position) {
@@ -88,16 +95,22 @@ var validation = (function () {
                 }
             }).trigger('show');
         };
+
     return {
         init: init,
         validateForm: validateForm
-    };
+    }
+
 })();
 
+
+// 
+//fix for fake upload placeholder
+// 
 var UploadFix = (function() {
     // Setting up listening if user has chose a file
     var _setUpListeners = function() {
-            $('#form-file').on('change', _showPlaceholder);
+            $('#file').on('change', _showPlaceholder);
         },
 
     // adding a placeholder text
@@ -119,6 +132,9 @@ var UploadFix = (function() {
 
 })();
 
+// 
+// fixes for placeholder in ie
+// 
 var FixPlaceholders = (function() {
     var _fixPlaceholders = function() {
         $('input, textarea').placeholder();
@@ -136,6 +152,11 @@ $(document).ready(function() {
     if ($.find('#file-form-label').length > 0) {
         UploadFix.init();
     }
+
+    if ($.find('.projects-item').length > 0) {
+        Projects.init();
+    }
+
 
     if ($.find('form').length > 0) {
         validation.init();

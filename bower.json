@@ -2,6 +2,7 @@
   "name": "dz4",
   "dependencies": {
     "jquery": "1.11",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "jquery-placeholder": "~2.1.1"
   }
 }

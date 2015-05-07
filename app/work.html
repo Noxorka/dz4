@@ -299,27 +299,36 @@
 		</div>
 
 		<div class="dz4-body-popup">
+			<!--Ответ, что все хорошо-->
+			<div class="dz6-form--info dz6-form--info__success">Все отлично! Форма отправлена</div>
+
+			<!--Ответ, что ошибка-->
+			<div class="dz6-form--info dz6-form--info__error">Произошла ошибка</div>
+
 			<form action="">
 				<div class="dz4-form-popup__form-group">
 					<label>Название проекта</label>
 					<input type="text" placeholder="Ваш логин" class="dz4-form-control" qtip-position="left" qtip-content="Название проекта">
 				</div>
+
 				<div class="dz4-form-popup__form-group">
 					<label>Картинка проекта</label>
-					<div id="file-form-label" class="dz4-imput-add-form dz4-form-control">
+					<div id="file-form-label" class="dz4-imput-add-form dz4-form-control" qtip-position="left" qtip-content="Загрузите изображение">
+						<input type="text" class="dz4-input-file-name" id="file-name" placeholder="Загрузите изображение" disabled  qtip-position="left" qtip-content="Загрузите изображение"/>
 						<div class="dz4-button-add"></div>
-						<div class="dz4-input-file-name" id="file-name">Загрузите изображение</div>
-						<input type="file" name="file" id="file" required class="form-file" title="Загрузите изображение" qtip-position="left" qtip-content="Загрузите фото проета">
+
+						<input type="file" name="file" id="file" class="form-file" title="Загрузите изображение">
 					</div>
 				</div>
+
 				<div class="dz4-form-popup__form-group">
 					<label>URL проекта</label>
-					<input type="text" placeholder="Добавить ссылку" class="dz4-form-control" qtip-position="left" qtip-content="Ссылка на проект">
+					<input type="text" placeholder="Добавить ссылку" class="dz4-form-control" qtip-position="left" qtip-content="Ссылка на проект" >
 				</div>
 
 				<div class="dz4-form-popup__form-group">
 					<label>Описание</label>
-					<textarea class="dz4-form-control" rows="4" id="exampleInputText" placeholder="Кратко в чем чуть" name="massage" qtip-position="left" qtip-content="Опишите проект"></textarea>
+					<textarea class="dz4-form-control" rows="4" id="exampleInputText" placeholder="Кратко в чем чуть" name="massage" qtip-position="left" qtip-content="Опишите проект" ></textarea>
 				</div>
 
 				<div class="dz4-block-button">
@@ -341,8 +350,9 @@
 
 <script type="text/javascript" src="bower/jquery/dist/jquery.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
-<script type="text/javascript" src="js/validate.js" charset="utf-8"></script>
-<script src="js/inputFile.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/validate_1.js" charset="utf-8"></script>
 </body>
 </html>

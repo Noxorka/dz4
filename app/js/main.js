@@ -1,13 +1,7 @@
 "use strict";
-//Открытие попапа
-function Bpopup() {
-    var el;
-    el = document.getElementById("addProgect");
-    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-}
-
 
 var model = (function() {
+
     /*Валидация*/
     var init = function() {
             console.log('INIt form');
