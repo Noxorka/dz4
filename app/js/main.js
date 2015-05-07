@@ -1,5 +1,6 @@
+
 "use strict";
-//Открытие попапа
+//???????? ??????
 function Bpopup() {
     var el;
     el = document.getElementById("addProgect");
@@ -8,7 +9,7 @@ function Bpopup() {
 
 
 var model = (function() {
-    /*Валидация*/
+    /*?????????*/
     var init = function() {
             console.log('INIt form');
             _setUpListners();
@@ -19,15 +20,15 @@ var model = (function() {
         _submitForm = function(ev) {
             console.log('INIt formfd');
 
-            /*Отменяем функцию, что бы отменить простую отправку phр формы*/
+            /*???????? ???????, ??? ?? ???????? ??????? ???????? ph? ?????*/
             ev.preventDefault();
 
-            /*Задается переменна и ее свойства*/
+            /*???????? ????????? ? ?? ????????*/
             var form = $(this),
-                url = '../php/ajax.php', //указываем путь к обрабочику php
+                url = '../php/ajax.php', //????????? ???? ? ?????????? php
                 defObject = _ajaxForm(form,url);
 
-            /*Проверка обекта*/
+            /*???????? ??????*/
             if (defObject) {
                 defObject.done(function (ans) {
                     var massage = ans.massage,
@@ -54,9 +55,9 @@ var model = (function() {
                 dataType : "JSON",
                 data: data
             }).fail( function(ans){
-                    console.log('Какая-та проблема');
-                    form.find('.dz6-form--info__error').text('Произошла ошибка').show();
-                });
+                console.log('?????-?? ????????');
+                form.find('.dz6-form--info__error').text('????????? ??????').show();
+            });
         };
 
     return {

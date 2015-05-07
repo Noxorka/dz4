@@ -1,43 +1,40 @@
+//???????? ??????
 function Bpopup() {
     var el;
     el = document.getElementById("addProgect");
     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
-var validation = (function() {
+var Validation = (function() {
 
-    var init = function() {
-            console.log('????????????? ?????? Validation');
-            _setUpListners();
+    var _setUpListeners = function() {
+            $('form').on('keydown','.dz4-form__input--error', _removeError);
+            $('form').on('reset', _clearForm);
+            $('form').on('change', '#file', _removeErrorUpload);
         },
 
-        validateForm = function(form) {
-            console.log('???????? ?????');
+        _validateForm = function(form) {
 
-            var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+            var elements = form.find('input, textarea').not('#reset, [type="submit"],[type="hidden"],[type="file"]'),
                 valid = true;
 
-            $.each(elements, function(index,val) {
+            $.each(elements, function(index, val) {
                 var element = $(val),
                     val = element.val(),
                     pos = element.attr('qtip-position');
-
-                if(val.length === 0 ) {
+                if (val.length < 1) {
                     element.addClass('dz4-form__input--error');
-                    _createQtip(element,pos);
+                    _createTooltip(element, pos);
                     valid = false;
                 }
+
             });
             return valid;
-        },
-        _setUpListners = function(){
-            $('form').on('keydown','.dz4-form__input--error', _removeError);
-            $('form').on('change', '#file', _removeErrorUpload);
-            $('form').on('reset', _clearForm);
+
         },
 
         _removeError = function() {
-            console.log('???????? ??????? ???????');
+            console.log('Удаление красной обводки');
             $(this).removeClass('dz4-form__input--error');
         },
 
@@ -55,24 +52,28 @@ var validation = (function() {
             filename.trigger('hideTooltip');
         },
 
-        _createQtip = function(element, position) {
-            console.log('tooltip');
+        _clearPopupForm = function(form) {
+            form.find('input, textarea').trigger('hideTooltip');
+            form.find('.dz4-form__input--error').removeClass('dz4-form__input--error');
+            form.find('.file-input-text').removeClass('error-fake-input');
+        },
 
-            if (position === "right") {
+        _createTooltip = function(element, position) {
+            if (position === 'right') {
                 position = {
                     my: 'left center',
                     at: 'right center'
                 }
-            }else{
+            } else {
                 position = {
-                    my: "right center",
+                    my: 'right center',
                     at: 'left center',
                     adjust: {
                         method: 'shift none'
                     }
                 }
             }
-            //initalisation tooltip
+
             element.qtip({
                 content: {
                     text: function() {
@@ -80,10 +81,10 @@ var validation = (function() {
                     }
                 },
                 show: {
-                    event: "show"
+                    event: 'show'
                 },
                 hide: {
-                    event: "keydown hideTooltip"
+                    event: 'keydown hideTooltip'
                 },
                 position: position,
                 style: {
@@ -97,8 +98,160 @@ var validation = (function() {
         };
 
     return {
-        init: init,
-        validateForm: validateForm
+        init: _setUpListeners,
+        validateForm: _validateForm,
+        clearPopupForm: _clearPopupForm
+    }
+
+})();
+
+// 
+// ContactsForm module
+// 
+var ContactForm = (function() {
+
+    var _setUpListeners = function() {
+            $('#form-question').on('submit', _submitForm);
+        },
+
+        _submitForm = function(ev) {
+            ev.preventDefault();
+
+            var form = $(this),
+                url = '/send-mail.php',
+                defObject = _ajaxForm(form, url);
+
+            if (defObject) {
+                defObject.done(function(resp) {
+                    var msg = resp.msg,
+                        status = resp.status;
+
+                    if (status === 'OK') {
+                        form.trigger('reset');
+                    }
+                });
+            }
+        },
+
+        _ajaxForm = function(form, url) {
+            if (!Validation.validateForm(form)) return false;
+
+            var data = form.serialize();
+
+            return $.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'JSON',
+                data: data
+            }).fail(function(resp) {
+                console.log('Something is gone wrong');
+            })
+        }
+
+
+    return {
+        init: _setUpListeners
+    }
+
+})();
+
+
+var AddProjectForm = (function() {
+
+    var _setUpListeners = function() {
+            $('#dz4-popup-form').on('submit', _submitForm);
+        },
+
+        _submitForm = function(ev) {
+            ev.preventDefault();
+
+            var form = $(this),
+                url = '/add-projects.php',
+                defObject = _ajaxForm(form, url);
+
+            if (defObject) {
+                defObject.done(function(resp) {
+                    var msg = resp.msg,
+                        status = resp.status;
+
+                    if (status === 'OK') {
+                        form.trigger('reset');
+                        $('.popup-success').show();
+                    }
+                });
+            }
+        },
+
+        _ajaxForm = function(form, url) {
+            if (!Validation.validateForm(form)) return false;
+
+            var data = form.serialize();
+
+            return $.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'JSON',
+                data: data
+            }).fail(function(resp) {
+                console.log('Something is gone wrong');
+            })
+        }
+
+
+    return {
+        init: _setUpListeners
+    }
+
+})();
+
+
+//
+//
+//
+
+var LoginForm = (function() {
+
+    var _setUpListeners = function() {
+            $('#dz-4-autoriz--form').on('submit', _submitForm);
+        },
+
+        _submitForm = function(ev) {
+            ev.preventDefault();
+
+            var form = $(this),
+                url = '/login.php',
+                defObject = _ajaxForm(form, url);
+
+            if (defObject) {
+                defObject.done(function(resp) {
+                    var msg = resp.msg,
+                        status = resp.status;
+
+                    if (status === 'OK') {
+                        form.trigger('reset');
+                    }
+                });
+            }
+        },
+
+        _ajaxForm = function(form, url) {
+            if (!Validation.validateForm(form)) return false;
+
+            var data = form.serialize();
+
+            return $.ajax({
+                type: 'POST',
+                url: url,
+                dataType: 'JSON',
+                data: data
+            }).fail(function(resp) {
+                console.log('Something is gone wrong');
+            })
+        }
+
+
+    return {
+        init: _setUpListeners
     }
 
 })();
@@ -133,6 +286,26 @@ var UploadFix = (function() {
 })();
 
 // 
+//margin fixing for 3rd element in IE
+// 
+var Projects = (function() {
+    var _after = $('.projects-item:nth-child(3n+1)'),
+
+        _fixMargin = function() {
+            _after.css("margin-left", "0");
+        },
+
+        _fixFloat = function() {
+            _after.css("clear", "both");
+        }
+
+    return {
+        init: _fixMargin
+    }
+
+})();
+
+// 
 // fixes for placeholder in ie
 // 
 var FixPlaceholders = (function() {
@@ -146,6 +319,32 @@ var FixPlaceholders = (function() {
         }
     }
 })();
+// 
+//Popup showing and hiding module
+// 
+var Popup = (function() {
+    var _popup = $('#popup-project'),
+
+        _setUpListeners = function() {
+            $('.add-project').on('click', _popupShow);
+        },
+
+        _popupShow = function(e) {
+            e.preventDefault();
+            _popup.bPopup({
+                onClose: function() {
+                    var form = $('form');
+                    Validation.clearPopupForm(form)
+                }
+            });
+        }
+
+    return {
+        init: _setUpListeners
+    }
+
+})();
+
 
 $(document).ready(function() {
 
@@ -153,13 +352,28 @@ $(document).ready(function() {
         UploadFix.init();
     }
 
+    if ($.find('#popup-project').length > 0) {
+        Popup.init();
+    }
+
     if ($.find('.projects-item').length > 0) {
         Projects.init();
     }
 
-
     if ($.find('form').length > 0) {
-        validation.init();
+        Validation.init();
         FixPlaceholders.init();
+    }
+
+    if ($.find('#form-question').length > 0) {
+        ContactForm.init();
+    }
+
+    if ($.find('#dz4-popup-form').length > 0) {
+        AddProjectForm.init();
+    }
+
+    if ($.find('#dz-4-autoriz--form').length > 0) {
+        LoginForm.init();
     }
 });
