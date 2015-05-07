@@ -25,6 +25,7 @@
 		<!--css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 		
 	</head>
 	<body>
@@ -39,15 +40,15 @@
 					<form action="">
 						<div class="dz4-form-authorization__form-group">
 							<label for="">Логин</label>
-							<input type="text" placeholder="Ваш логин" class="dz4-form-control">
+							<input type="text" placeholder="Ваш логин" class="dz4-form-control" qtip-position="left" qtip-content="Укажите ваш логин">
 						</div>
 						<div class="dz4-form-authorization__form-group">
 							<label for="">Пароль</label>
-							<input type="password" placeholder="Пароль" class="dz4-form-control">
+							<input type="password" placeholder="Пароль" class="dz4-form-control" qtip-position="left" qtip-content="Укажите ваш пароль">
 						</div>
 
 						<div class="dz4-block-button">
-							<input type="submit" name="button_open" value="Отправить" class="dz4-button dz4-button-blue"/>	
+							<input type="submit" name="button_open" value="Отправить" class="dz4-button dz4-button-blue" />
 						</div>	
 					</form>
 				</div>
@@ -60,8 +61,11 @@
 			<span class="dz-footer__p-small-c">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
 		</div>
 	</footer>
-		
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+
+
+		<script type="text/javascript" src="bower/jquery/dist/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+		<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/validate.js" charset="utf-8"></script>
 	</body>
-	</html>	
+</html>
